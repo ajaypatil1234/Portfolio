@@ -87,6 +87,7 @@ section {
 
 .home-img img {
     width: 35vw !important;
+    box-shadow: 0 0 3rem var(--main-color) !important;
     /* animation: floatImage 4s ease-in-out infinite; */
 }
 
