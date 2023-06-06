@@ -15,7 +15,8 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #ffe62c;
+    --hover: green;
 
 }
 
@@ -47,6 +48,13 @@ section {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    font-weight: 700 !important;
+}
+
+.header a {
+    font-family: Abril Fatface !important;
+    font-size: 3rem;
+    color: var(--main-color) !important;
 }
 
 .header .sticky {
@@ -86,7 +94,7 @@ section {
 
 .home-img img {
     width: 35vw !important;
-    box-shadow: 0 0 3rem var(--main-color) !important;
+    box-shadow: 10px 5px 5px var(--main-color) !important;
     /* animation: floatImage 4s ease-in-out infinite; */
 }
 
@@ -103,6 +111,7 @@ section {
         transform: translateY(0);
     }
 } */
+
 
 .home-content h3 {
     font-size: 3.2rem;
@@ -142,6 +151,10 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+}
+
+.home-content span {
+    font-family: Abril Fatface !important;
 }
 
 .social-media a {
@@ -241,8 +254,54 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.portfolio {
+.skills {
+    background: var(--second-bg-color) !important;
+}
+
+.progress-title {
+    width: 100%;
+    height: auto;
+}
+
+.progress-title h3 span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-color);
+    margin: 0 0 20px;
+}
+
+.progress {
+    height: 20px;
     background: var(--second-bg-color);
+    border-radius: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 2px white;
+    margin-bottom: 20px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress .progress-bar {
+    border-radius: 20px;
+    border: 1px solid #000;
+    animation: animate-positive 2s;
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
+
+.portfolio {
+    background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -318,6 +377,9 @@ span {
     color: var(--second-bg-color);
 }
 
+.contact {
+    background: var(--second-bg-color);
+}
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -342,7 +404,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color) !important;
-    background: var(--second-bg-color) !important;
+    background: var(--bg-color) !important;
     border-radius: .8rem;
     margin: .7rem 0;
 
@@ -368,7 +430,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
@@ -486,13 +548,22 @@ span {
     }
 }
 
-@media(max-width : 612px) {
+@media(max-width : 666px) {
+    .header .navbar {
+        display: none;
+    }
+
     .portfolio {
         margin: 3rem;
     }
 }
 
 @media(max-width:450px) {
+
+    .header .navbar {
+        display: none;
+    }
+
     html {
         font-size: 50%;
     }
@@ -512,6 +583,12 @@ span {
 }
 
 @media(max-width:350px) {
+
+    .header .navbar,
+    i {
+        display: none;
+    }
+
     .home-img img {
         width: 90vw !important;
     }
