@@ -93,7 +93,7 @@ section {
 }
 
 .home-img img {
-    width: 35vw !important;
+    width: 30vw !important;
     /* box-shadow: 10px 5px 5px var(--main-color) !important; */
     /* animation: floatImage 4s ease-in-out infinite; */
 }
