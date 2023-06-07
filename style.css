@@ -240,6 +240,10 @@ span {
     transform: scale(1.02);
 }
 
+.service-container .service-box .rea {
+    font-size: 1.5rem;
+}
+
 .service-box i {
     font-size: 7rem;
     color: var(--main-color);
